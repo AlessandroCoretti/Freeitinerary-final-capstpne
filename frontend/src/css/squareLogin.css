@@ -1,0 +1,28 @@
+.square {
+  height: 100vh;
+}
+
+.simple-logo {
+  transform: rotate(45deg);
+  height: 10%;
+}
+
+.inner-sq:hover {
+  cursor: url("../assets/cursor-fill.svg"), auto;
+}
+
+@media (max-width: 425px) {
+  .inner-sq {
+    width: 100%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .inner-sq {
+    width: 65%;
+  }
+}
+@media (min-width: 769px) {
+  .inner-sq {
+    width: 35%;
+  }
+}

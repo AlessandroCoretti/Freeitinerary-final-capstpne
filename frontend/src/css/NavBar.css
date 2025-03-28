@@ -1,0 +1,49 @@
+.background-nav {
+  background: transparent;
+  position: fixed;
+  transition: background-color 0.3s ease;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.fs-6 {
+  color: white;
+}
+.fs-6:hover {
+  color: rgb(13, 176, 149);
+}
+
+.signup-btn {
+  background-color: white !important;
+}
+
+Button > .fs-6 {
+  color: black;
+}
+.signup-btn:hover {
+  color: white;
+  background-color: rgb(13, 176, 149) !important;
+}
+.signup-btn:hover,
+Button > .fs-6:hover {
+  color: white;
+  background-color: rgb(13, 176, 149);
+}
+
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.963) !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled .nav-link {
+  color: rgb(13, 176, 149) !important;
+  transition: color 0.3s ease;
+}
+.navbar-scrolled .nav-link:hover {
+  color: black !important;
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}

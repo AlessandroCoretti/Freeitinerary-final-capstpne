@@ -1,0 +1,27 @@
+a.nav-link {
+  font-size: 0.93rem;
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 425px) {
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  a.nav-link {
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  a.nav-link {
+    font-size: 0.93rem;
+    margin-bottom: 0.7rem;
+  }
+}
+@media (min-width: 769px) {
+  a.nav-link {
+    font-size: 0.93rem;
+    margin-bottom: 0.7rem;
+  }
+}

@@ -1,0 +1,35 @@
+.external-cont {
+  width: 100%; /* Contenitore che occupa tutta la larghezza della riga */
+  overflow: hidden; /* Nasconde le icone fuori dalla vista */
+  position: relative;
+  background-color: rgb(13, 176, 149); /* Sfondo per evidenziare */
+  height: 4vh; /* Altezza della barra */
+}
+
+.scrolling-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: scroll 10s linear infinite; /* Animazione senza pause */
+  width: calc(100% * 2); /* Duplica la larghezza del contenitore */
+}
+
+.scrolling-icons svg {
+  font-size: 3vh; /* Dimensione delle icone */
+  margin: 0 15px; /* Spaziatura uniforme */
+  white-space: nowrap;
+  color: white; /* Evita il ritorno a capo */
+}
+
+/* Animazione continua */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Inizio */
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-50%); /* Fine */
+  }
+}
