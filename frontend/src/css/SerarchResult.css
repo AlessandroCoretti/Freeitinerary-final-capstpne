@@ -1,0 +1,16 @@
+button.btn.btn-primary {
+  background-color: rgb(13, 176, 149);
+}
+
+#goback-btn {
+  background-color: transparent !important;
+}
+
+.card {
+  border-radius: 2rem;
+}
+
+.Hotel {
+  height: 30rem;
+  border-radius: 1.5rem;
+}
