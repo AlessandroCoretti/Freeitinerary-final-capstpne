@@ -104,7 +104,7 @@ function SearchResults() {
   return (
     <Container className="mt-3">
       <div id="goback" className="mb-3">
-        <Button href="/" id="goback-btn" className="goback p-0 border-0">
+        <Button href="/home" id="goback-btn" className="goback p-0 border-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=" rgb(13, 176, 149)" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
           </svg>
@@ -128,7 +128,7 @@ function SearchResults() {
                   <p className="m-0 fs-2 fw-bold">{cheapestFlight?.legs[0]?.origin?.id}</p>
                   <Card.Text className="fs-md-5">{cheapestFlight?.legs[0]?.origin?.name}</Card.Text>
                 </div>
-                <div className="destination d-flex flex-column justify-content-center align-items-center gap-4">
+                <div className="destination d-flex flex-column justify-content-center align-items-center text-center gap-4">
                   <p className="m-0 fs-2 fw-bold">{cheapestFlight?.legs[0]?.destination?.id}</p>
                   <Card.Text className="fs-md-5">{cheapestFlight?.legs[0]?.destination?.name}</Card.Text>
                 </div>
