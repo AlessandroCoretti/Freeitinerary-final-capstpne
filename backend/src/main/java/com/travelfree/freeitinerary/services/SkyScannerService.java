@@ -12,7 +12,7 @@ import org.springframework.http.HttpHeaders;
 @Service
 public class SkyScannerService {
     private final String API_HOST = "sky-scanner3.p.rapidapi.com";
-    private final String API_KEY = "3e2c2e9da5mshc6dcc5671ed7ae7p1538a3jsn169495aaace";
+    private final String API_KEY = "3e2c2e9da5mshc6dcc5671ed7ae7p1538a3jsn169495aaace6";
 
     public String getAirports(){
         String API_URL = "https://" + API_HOST + "/flights/airports";

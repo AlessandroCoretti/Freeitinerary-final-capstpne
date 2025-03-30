@@ -11,6 +11,21 @@ button.btn.btn-primary {
 }
 
 .Hotel {
-  height: 30rem;
+  height: 25%;
   border-radius: 1.5rem;
+}
+
+.img-container > img {
+  height: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .fs-md-5 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 769px) {
+  .fs-md-5 {
+    font-size: 1.25rem;
+  }
 }

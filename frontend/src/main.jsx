@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SquareLogin from "./SquareLogin";
 import SquareSignup from "./SquareSignup";
 import SearchResults from "./SearchResults";
-import Prova from "./Prova";
 import HomeCustomIn from "./HomeCustomIn";
 import HomeCustom from "./HomeCustom ";
 
@@ -19,7 +18,6 @@ createRoot(document.getElementById("root")).render(
       <Route path="/sign-up" element={<SquareSignup />} />
       <Route path="/log-in" element={<SquareLogin />} />
       <Route path="/results" element={<SearchResults />} />
-      <Route path="/prova" element={<Prova />} />
     </Routes>
   </BrowserRouter>
 );
