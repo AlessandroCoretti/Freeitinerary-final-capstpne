@@ -16,7 +16,7 @@ function SearchResults() {
   const [hotels, setHotels] = useState([]);
   const [loadingHotels, setLoadingHotels] = useState(false);
 
-  //formattazione della data
+  //formattazione dela data
   const formatDate = (dateTime) => {
     if (!dateTime) return "";
     const date = new Date(dateTime);
@@ -104,7 +104,7 @@ function SearchResults() {
   return (
     <Container className="mt-3">
       <div id="goback" className="mb-3">
-        <Button href="/home" id="goback-btn" className="goback p-0 border-0">
+        <Button href="/" id="goback-btn" className="goback p-0 border-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=" rgb(13, 176, 149)" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
           </svg>
@@ -119,7 +119,7 @@ function SearchResults() {
               <div className="top-bar d-flex align-items-end align-items-md-center justify-content-between">
                 <div className="air-logo d-flex flex-column flex-md-row align-items-center gap-0 gap-md-3">
                   <img src={cheapestFlight?.legs[0]?.carriers.marketing[0].logoUrl} alt="agencies logo" />
-                  <p className="fs-md-5m-0 ">{cheapestFlight?.legs[0]?.carriers.marketing[0].name}</p>
+                  <p className="fs-md-5 m-0 ">{cheapestFlight?.legs[0]?.carriers.marketing[0].name}</p>
                 </div>
                 <p className="fs-md-5 m-0 ">Flight Num {cheapestFlight?.legs[0]?.segments[0]?.flightNumber}</p>
               </div>
