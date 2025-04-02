@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import ticket from "./assets/ticket.svg";
-import "./css/index.css";
-import "./css/SerarchResult.css";
-import PlaceholderFlight from "./PlaceholderFlight";
+import ticket from "../assets/ticket.svg";
+import "../css/index.css";
+import "../css/SerarchResult.css";
+import PlaceholderFlight from "../components/PlaceholderFlight";
 
 function SearchResults() {
   const location = useLocation();

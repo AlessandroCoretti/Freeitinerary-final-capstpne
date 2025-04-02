@@ -1,7 +1,7 @@
 import { Autocomplete, Box, TextField, Button } from "@mui/material";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./css/FlightSearch.css";
+import "../css/FlightSearch.css";
 
 function FlightSearch() {
   const [airports, setAirports] = useState([]);

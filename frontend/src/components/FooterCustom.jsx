@@ -1,6 +1,6 @@
 import { Col, NavLink, Row } from "react-bootstrap";
-import Logo4 from "./assets/Logo4.svg";
-import "./css/Footer.css";
+import Logo4 from "../assets/Logo4.svg";
+import "../css/Footer.css";
 
 function FooterCustom() {
   return (

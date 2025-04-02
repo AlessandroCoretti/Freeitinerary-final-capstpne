@@ -4,7 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import { Button, CardActions } from "@mui/material";
-import "./css/Cards.css";
+import "../css/Cards.css";
 
 function OfferCard() {
   return (

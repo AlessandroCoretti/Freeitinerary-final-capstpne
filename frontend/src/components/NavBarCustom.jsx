@@ -1,6 +1,6 @@
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import Logo4 from "./assets/Logo4.svg";
-import "./css/Navbar.css";
+import Logo4 from "../assets/Logo4.svg";
+import "../css/Navbar.css";
 import { useEffect, useState } from "react";
 
 function NavBarCustom() {

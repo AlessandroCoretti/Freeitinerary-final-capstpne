@@ -1,4 +1,4 @@
-import "./css/BackgroundImages.css";
+import "../css/BackgroundImages.css";
 import AirportSearch from "./AirportSearch";
 
 function BackgroundImages() {

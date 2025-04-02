@@ -2,12 +2,11 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./css/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SquareLogin from "./SquareLogin";
-import SquareSignup from "./SquareSignup";
-import SearchResults from "./SearchResults";
-import HomeCustomIn from "./HomeCustomIn";
-import HomeCustom from "./HomeCustom ";
-
+import SquareLogin from "./pages/SquareLogin";
+import SquareSignup from "./pages/SquareSignup";
+import SearchResults from "./pages/SearchResults";
+import HomeCustomIn from "./pages/HomeCustomIn";
+import HomeCustom from "./pages/HomeCustom ";
 //import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
