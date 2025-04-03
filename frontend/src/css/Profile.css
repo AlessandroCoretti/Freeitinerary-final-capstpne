@@ -1,0 +1,17 @@
+.background {
+  background-color: #19a78e;
+  height: 60%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 4rem;
+    margin-left: 2%;
+  }
+}
+@media (min-width: 769px) {
+  .header {
+    padding-top: 12rem;
+    margin-left: 2%;
+  }
+}

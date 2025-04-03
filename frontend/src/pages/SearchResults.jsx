@@ -183,7 +183,7 @@ function SearchResults() {
             </Col>
           </Row>
         )}
-        {!loadingHotels && hotels.length === 0 && <p>Nessun hotel trovato.</p>}
+        {!loadingHotels && hotels.length === 0 && <p className="ms-5">Nessun hotel trovato. Ricarica la pagine per altri risultati</p>}
       </div>
     </Container>
   );

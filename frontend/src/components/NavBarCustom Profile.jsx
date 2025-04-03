@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import Logo4 from "../assets/Logo4.svg";
 import "../css/Navbar.css";
@@ -41,6 +41,7 @@ function NavBarCustomProfile() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <Navbar expand="lg" className={`background-nav ${isScrolled ? "navbar-scrolled" : ""}`}>
       <Container fluid className="justify-content-end justify-content-lg-center">
@@ -59,7 +60,7 @@ function NavBarCustomProfile() {
               </Nav.Link>
             </div>
 
-            <Navbar.Brand href="/home" className="m-0">
+            <Navbar.Brand href="/home" className="m-0 me-5">
               <img src={Logo4} alt="Freeitinerary big-logo" />
             </Navbar.Brand>
 
@@ -122,7 +123,10 @@ function NavBarCustomProfile() {
                   anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                 >
                   <MenuItem onClick={handleClose}>
-                    <Avatar /> Profile
+                    <Avatar />
+                    <Button className="p-0 m-0 bg-transparent border-0 text-black" href="/profile">
+                      Profile
+                    </Button>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <Avatar /> My account
