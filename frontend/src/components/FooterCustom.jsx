@@ -30,24 +30,24 @@ function FooterCustom() {
             <div id="info-container" className="d-flex justify-content-between justify-content-md-start gap-5 text-dark w-100">
               <ul className="list-unstyled">
                 <h6 className="fw-normal text-secondary text-center mb-3">Profile</h6>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
+                <NavLink href="https://www.linkedin.com/in/alessandro-coretti-5a31701a7/">Linkedin</NavLink>
+                <NavLink href="https://www.linkedin.com/in/alessandro-coretti-5a31701a7/">Linkedin</NavLink>
+                <NavLink href="https://www.linkedin.com/in/alessandro-coretti-5a31701a7/">Linkedin</NavLink>
+                <NavLink href="https://www.linkedin.com/in/alessandro-coretti-5a31701a7/">Linkedin</NavLink>
               </ul>
               <ul className="list-unstyled">
                 <h6 className="fw-normal text-secondary text-center mb-3">Profile</h6>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
+                <NavLink href="https://github.com/AlessandroCoretti">Github</NavLink>
+                <NavLink href="https://github.com/AlessandroCoretti">Github</NavLink>
+                <NavLink href="https://github.com/AlessandroCoretti">Github</NavLink>
+                <NavLink href="https://github.com/AlessandroCoretti">Github</NavLink>
               </ul>
               <ul className="list-unstyled">
                 <h6 className="fw-normal text-secondary text-center mb-3">Profile</h6>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
-                <NavLink href="/log-in">Contact Us</NavLink>
+                <NavLink href="#">Contact Us</NavLink>
+                <NavLink href="#">Contact Us</NavLink>
+                <NavLink href="#">Contact Us</NavLink>
+                <NavLink href="#">Contact Us</NavLink>
               </ul>
             </div>
           </Col>

@@ -32,7 +32,7 @@ function SearchResults() {
   useEffect(() => {
     setLoading(true);
 
-    const url = `http://localhost:8080/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
+    const url = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
       returnDate ? `&returnDate=${returnDate}` : ""
     }`;
 
@@ -74,7 +74,9 @@ function SearchResults() {
 
       setLoadingHotels(true);
 
-      const hotelUrl = `http://localhost:8080/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${returnDate || departureDate}`;
+      const hotelUrl = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${
+        returnDate || departureDate
+      }`;
 
       try {
         const response = await fetch(hotelUrl);

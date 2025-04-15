@@ -15,7 +15,7 @@ function FlightSearch() {
 
   // Fetch degli aeroporti
   useEffect(() => {
-    fetch("http://localhost:8080/api/airports")
+    fetch("http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/airports")
       .then((response) => response.json())
       .then((data) => setAirports(data.data))
       .catch((error) => console.error("Errore durante il recupero degli aeroporti:", error));
@@ -29,7 +29,7 @@ function FlightSearch() {
 
     try {
       // Recupera l'entityId dall'API di auto-completamento
-      const autoCompleteUrl = `http://localhost:8080/api/hotels/auto-complete?query=${toIata}`;
+      const autoCompleteUrl = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/hotels/auto-complete?query=${toIata}`;
       const response = await fetch(autoCompleteUrl);
 
       if (!response.ok) {
@@ -55,7 +55,7 @@ function FlightSearch() {
         });
 
         // Ricerca voli
-        const flightUrl = `http://localhost:8080/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
+        const flightUrl = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
           returnDate ? `&returnDate=${returnDate}` : ""
         }`;
 
@@ -68,7 +68,7 @@ function FlightSearch() {
           .catch((error) => console.error("Errore durante il recupero dei voli:", error));
 
         // Ricerca hotel
-        const hotelUrl = `http://localhost:8080/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${
+        const hotelUrl = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${
           returnDate || departureDate
         }`;
 
