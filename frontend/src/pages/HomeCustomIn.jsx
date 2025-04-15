@@ -1,7 +1,7 @@
 import BackgroundImages from "../components/BackgroundImage";
 import CarouselCustom from "../components/CarouselCustom";
 import FooterCustom from "../components/FooterCustom";
-import NavBarCustomProfile from "../components/NavBarCustom Profile";
+import NavBarCustomProfile from "../components/NavBarCustomProfile";
 import OfferCard from "../components/OfferCard";
 import "../css/Home.css";
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Avatar, IconButton } from "@mui/material";
 
-import NavBarCustomProfile from "../components/NavBarCustom Profile";
+import NavBarCustomProfile from "../components/NavBarCustomProfile";
 import AccountCarousel from "../components/AccountCarousel";
 import FooterCustom from "../components/FooterCustom";
 import CarouselCustom from "../components/CarouselCustom";
