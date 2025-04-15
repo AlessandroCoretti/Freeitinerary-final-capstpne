@@ -1,7 +1,7 @@
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Logo4 from "../assets/Logo4.svg";
 import { useEffect, useState } from "react";
-import "../css/Navbar.css";
+import "../css/NavBar.css";
 
 function NavBarCustom() {
   const [isScrolled, setIsScrolled] = useState(false);
