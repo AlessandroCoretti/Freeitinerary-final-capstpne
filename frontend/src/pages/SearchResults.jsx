@@ -32,7 +32,7 @@ function SearchResults() {
   useEffect(() => {
     setLoading(true);
 
-    const url = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
+    const url = `https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/flights/search?from=${fromIata}&to=${toIata}&departureDate=${departureDate}${
       returnDate ? `&returnDate=${returnDate}` : ""
     }`;
 
@@ -74,7 +74,7 @@ function SearchResults() {
 
       setLoadingHotels(true);
 
-      const hotelUrl = `http://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${
+      const hotelUrl = `https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/hotels/search?entityId=${entityId}&checkInDate=${departureDate}&checkOutDate=${
         returnDate || departureDate
       }`;
 

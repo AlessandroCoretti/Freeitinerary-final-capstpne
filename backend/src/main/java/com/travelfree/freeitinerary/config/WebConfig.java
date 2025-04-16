@@ -12,12 +12,17 @@ public class WebConfig {
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
-            public void addCorsMappings(CorsRegistry registry) {
+            public void addCorsMappings(CorsRegistry registry){
                 registry.addMapping("/**")
-                        .allowedOrigins("*") // Permette tutte le origini
+                        .allowedOrigins(
+                                "http://localhost:5173",
+                                "https://freeitinerary-final-capstpne.vercel.app",
+                                "https://freeitinerary-final-capstpne-l2sf10dcq.vercel.app",
+                                "https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*");
-                // ⚠️ Non usare allowCredentials(true) con allowedOrigins("*")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }
