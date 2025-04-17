@@ -8,7 +8,7 @@ function LoginCustom() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app/api/auth/login", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
