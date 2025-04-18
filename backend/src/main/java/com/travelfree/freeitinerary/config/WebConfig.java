@@ -14,10 +14,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry){
                 registry.addMapping("/**")
-                        .allowedOrigins(
+                        .allowedOriginPatterns(
                                 "http://localhost:5173",
-                                "https://freeitinerary-final-capstpne.vercel.app",
-                                "https://freeitinerary-final-capstpne-l2sf10dcq.vercel.app",
+                                "https://*.vercel.app",
                                 "https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
