@@ -16,6 +16,7 @@ public class WebConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
+                                "https://freeitinerary-final-capstpne-jfvgh75o6.vercel.app",
                                 "https://freeitinerary-final-capstpne.vercel.app",
                                 "https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app"
                         )
