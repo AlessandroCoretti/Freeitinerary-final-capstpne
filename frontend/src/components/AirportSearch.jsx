@@ -20,6 +20,7 @@ function FlightSearch() {
       .then((data) => setAirports(data.data))
       .catch((error) => console.error("Errore durante il recupero degli aeroporti:", error));
   }, []);
+  console.log(`${import.meta.env.VITE_API_URL}`);
 
   const searchFlightsAndHotels = async () => {
     if (!fromIata || !toIata || !departureDate) {
