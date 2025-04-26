@@ -18,14 +18,14 @@ function LoginCustom() {
 
       if (!response.ok) {
         throw new Error("Network resaponse was not ok");
-      } else {
-        window.location.href = "/home";
-        Alert("Welcome back");
       }
 
       const data = await response.json();
       console.log("Token ricevuto", data.token);
       localStorage.setItem("authToken", data.token);
+
+      Alert("Welcome back");
+      window.location.href = "/home";
     } catch (error) {
       console.error("Errore durante la richiesta: ", error);
     }
