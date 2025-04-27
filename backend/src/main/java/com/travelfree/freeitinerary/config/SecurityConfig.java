@@ -47,7 +47,9 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
                 "https://main-rebecca-alessandrocoretti-99c3ef12.koyeb.app",
-                "http://localhost:5173"
+                "http://localhost:5173",
+                "https://freeitinerary-final-capstpne-m1nmuqm7z.vercel.app"
+
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
